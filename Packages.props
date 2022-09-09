@@ -1,0 +1,9 @@
+<Project>
+    <ItemGroup>
+        <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.11.0"/>
+        <PackageReference Update="NunitXml.TestLogger" Version="3.0.107"/>
+        <PackageReference Update="NUnit3TestAdapter" Version="4.0.0"/>
+
+        <PackageReference Update="Microsoft.Extensions.FileProviders.Embedded" Version="3.1.0" />
+    </ItemGroup>
+</Project>

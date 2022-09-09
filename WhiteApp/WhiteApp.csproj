@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+
+        <RootNamespace>WhiteApp</RootNamespace>
+        <AssemblyName>WhiteApp</AssemblyName>
+        <AssemblyTitle>WhiteApp</AssemblyTitle>
+        <Product>WhiteApp</Product>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="./appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    
+
+    <ItemGroup>
+      <ProjectReference Include="..\AsyncApi.UI\AsyncApi.UI.csproj" />
+    </ItemGroup>
+    
+
+</Project>

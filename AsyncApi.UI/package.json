@@ -1,0 +1,8 @@
+{
+    "name": "asyncapi.ui",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@asyncapi/react-component": "^1.0.0-next.41"
+    }
+}
