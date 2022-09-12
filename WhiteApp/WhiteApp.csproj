@@ -10,17 +10,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    </ItemGroup>
-    <ItemGroup>
         <Content Include="./appsettings.json">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
-    
 
     <ItemGroup>
       <ProjectReference Include="..\AsyncApi.UI\AsyncApi.UI.csproj" />
+      <ProjectReference Include="..\AsyncApi.SignalR\AsyncApi.SignalR.csproj" />
     </ItemGroup>
     
 

@@ -31,6 +31,7 @@ namespace WhiteApp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHub<ChatHub>("/chat");
+                app.UseAsyncApiSignalRHub<ChatHub, IChatHub>("/chat");
             });
         }
     }
