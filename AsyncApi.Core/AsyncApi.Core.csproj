@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>AsyncApi.SignalR</RootNamespace>
+        <AssemblyName>AsyncApi.SignalR</AssemblyName>
+        <AssemblyTitle>AsyncApi.SignalR</AssemblyTitle>
+        <Product>AsyncApi.SignalR</Product>
+    </PropertyGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\AsyncApi.Models\AsyncApi.Models.csproj" />
+    </ItemGroup>
+</Project>

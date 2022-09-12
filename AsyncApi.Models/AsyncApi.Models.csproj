@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RootNamespace>AsyncApi.Models</RootNamespace>
+        <AssemblyName>AsyncApi.Models</AssemblyName>
+        <AssemblyTitle>AsyncApi.Models</AssemblyTitle>
+        <Product>AsyncApi.Models</Product>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="YamlDotNet" />
+    </ItemGroup>
+</Project>
