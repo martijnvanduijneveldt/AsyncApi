@@ -23,7 +23,7 @@ namespace AsyncApi.SignalR
             return this;
         }
 
-        public AsyncApiBuilder AddPublicMethod(string route, MethodInfo method)
+        public AsyncApiBuilder AddServerMethod(string route, MethodInfo method)
         {
             if (!_document.Channels.ContainsKey(route))
             {

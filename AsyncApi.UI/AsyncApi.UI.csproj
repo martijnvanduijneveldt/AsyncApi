@@ -23,5 +23,9 @@
         <EmbeddedResource Include="./node_modules/@asyncapi/react-component/styles/default.min.css" Link="AsyncApi.UI.default.min.css" Condition="Exists('./node_modules')" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AsyncApi.Core\AsyncApi.Core.csproj" />
+    </ItemGroup>
+
 </Project>
 

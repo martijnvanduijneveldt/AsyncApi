@@ -6,6 +6,9 @@
         <Product>AsyncApi.SignalR</Product>
     </PropertyGroup>
     <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\AsyncApi.Core\AsyncApi.Core.csproj"/>
     </ItemGroup>
 </Project>

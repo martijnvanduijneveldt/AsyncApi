@@ -27,7 +27,7 @@ namespace AsyncApi.Core.Tests
             builder.AddInfo("myTitle", "1.0.1");
 
             var method = typeof(AsyncApiBuilderTest).GetMethod(nameof(DummyMethodForTest));
-            builder.AddPublicMethod("/chat", method);
+            builder.AddServerMethod("/chat", method);
             
             var text = builder.Serialize();
 

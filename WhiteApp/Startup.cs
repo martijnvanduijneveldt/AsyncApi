@@ -1,3 +1,4 @@
+using AsyncApi.SignalR;
 using AsyncApi.UI;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,6 +12,7 @@ namespace WhiteApp
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAsyncApiUi();
             services.AddSignalR();
         }
 
