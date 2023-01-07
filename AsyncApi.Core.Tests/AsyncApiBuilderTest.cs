@@ -1,5 +1,4 @@
 using System;
-using AsyncApi.SignalR;
 using NUnit.Framework;
 
 namespace AsyncApi.Core.Tests
@@ -9,7 +8,7 @@ namespace AsyncApi.Core.Tests
         [Test]
         public void TestBasicGeneration()
         {
-            var builder = new AsyncApiBuilder();
+            var builder = new AsyncApiBuilder(null);
 
             builder.AddInfo("myTitle", "1.0.1");
 
@@ -22,7 +21,7 @@ namespace AsyncApi.Core.Tests
         [Test]
         public void TestBasicMethod()
         {
-            var builder = new AsyncApiBuilder();
+            var builder = new AsyncApiBuilder(null);
 
             builder.AddInfo("myTitle", "1.0.1");
 

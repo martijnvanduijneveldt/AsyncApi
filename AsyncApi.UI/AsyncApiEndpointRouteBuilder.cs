@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using AsyncApi.SignalR;
+using AsyncApi.Core;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -12,12 +12,15 @@ namespace AsyncApi.UI
 {
     public static class AsyncApiUIApplicationBuilderExtensions
     {
-        public static IServiceCollection AddAsyncApiUi(this IServiceCollection serviceCollection)
+        public static IServiceCollection AddAsyncApiUi(this IServiceCollection serviceCollection, AsyncApiUiOptions options)
         {
-            serviceCollection.AddSingleton<AsyncApiBuilder>();
-
+            var builder = new AsyncApiBuilder(options.XmlNavigator);
+            
+            serviceCollection.AddSingleton(builder);
             return serviceCollection;
         }
+        
+        
         
         public static IApplicationBuilder UseAsyncApiUi(this IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -26,6 +29,8 @@ namespace AsyncApi.UI
             {
                 throw new NotSupportedException("Please call services.AddAsyncApiUi() on IServiceCollection");
             }
+            
+            
             
             app.Map("/asyncapi",
                 subApp =>

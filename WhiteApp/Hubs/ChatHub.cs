@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 
 namespace WhiteApp.Hubs
 {
+    /// <summary>
+    /// My chat hub
+    /// </summary>
     public class ChatHub : Hub<IChatHub>
     {
         /// <summary>

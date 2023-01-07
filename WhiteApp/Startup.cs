@@ -1,9 +1,12 @@
+using System;
+using System.IO;
 using AsyncApi.SignalR;
 using AsyncApi.UI;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using WhiteApp.Hubs;
 
 namespace WhiteApp
@@ -12,7 +15,12 @@ namespace WhiteApp
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAsyncApiUi();
+            var options = new AsyncApiUiOptions();
+            
+            var filePath = Path.Combine(System.AppContext.BaseDirectory, "WhiteApp.xml");
+            options.IncludeXmlComments(filePath);
+            
+            services.AddAsyncApiUi(options);
             services.AddSignalR();
         }
 

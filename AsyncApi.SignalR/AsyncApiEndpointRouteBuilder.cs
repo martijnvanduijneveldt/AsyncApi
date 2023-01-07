@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using AsyncApi.Core;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.SignalR;
 

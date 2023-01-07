@@ -7,6 +7,12 @@
         <AssemblyTitle>WhiteApp</AssemblyTitle>
         <Product>WhiteApp</Product>
         <OutputType>Exe</OutputType>
+
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
@@ -16,9 +22,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AsyncApi.UI\AsyncApi.UI.csproj" />
-      <ProjectReference Include="..\AsyncApi.SignalR\AsyncApi.SignalR.csproj" />
+        <ProjectReference Include="..\AsyncApi.UI\AsyncApi.UI.csproj"/>
+        <ProjectReference Include="..\AsyncApi.SignalR\AsyncApi.SignalR.csproj"/>
     </ItemGroup>
-    
+
 
 </Project>
