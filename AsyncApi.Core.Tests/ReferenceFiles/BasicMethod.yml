@@ -1,4 +1,4 @@
-asyncapi: 2.4.0
+asyncapi: '2.6.0'
 info:
   title: myTitle
   version: 1.0.1
@@ -8,8 +8,33 @@ channels:
     publish:
       message:
         oneOf:
-        - $ref: '#/components/messages/DummyMethodForTest'
+          - $ref: '#/components/messages/DummyMethodForTest'
+          - $ref: '#/components/messages/DummyMethodForTest2'
 components:
   messages:
     DummyMethodForTest:
+      payload:
+        type: object
+        properties:
+          message:
+            type: string
+            description: My description for message
+          number:
+            type: number
+            description: My description for number
       name: DummyMethodForTest
+      title: DummyMethodForTest
+      summary: My summary for DummyMethodForTest
+    DummyMethodForTest2:
+      payload:
+        type: object
+        properties:
+          message2:
+            type: string
+            description: My description for message2
+          number2:
+            type: number
+            description: My description for number2
+      name: DummyMethodForTest2
+      title: DummyMethodForTest2
+      summary: My summary for DummyMethodForTest2

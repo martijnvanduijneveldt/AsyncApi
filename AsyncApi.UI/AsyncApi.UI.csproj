@@ -17,7 +17,6 @@
 
     <ItemGroup>
         <EmbeddedResource Include="./UI/index.html" Link="index.html" />
-        <EmbeddedResource Include="./UI/test.yml" Link="asyncapi.yml" />
 
         <EmbeddedResource Include="./node_modules/@asyncapi/react-component/browser/standalone/index.js" Link="AsyncApi.UI.index.js" Condition="Exists('./node_modules')" />
         <EmbeddedResource Include="./node_modules/@asyncapi/react-component/styles/default.min.css" Link="AsyncApi.UI.default.min.css" Condition="Exists('./node_modules')" />

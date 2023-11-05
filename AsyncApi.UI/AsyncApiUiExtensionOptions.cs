@@ -6,11 +6,14 @@ namespace AsyncApi.UI
 {
     public class AsyncApiUiOptions
     {
+        public readonly string Title;
+        public readonly string Version;
         public XPathNavigator XmlNavigator;
 
-        public AsyncApiUiOptions()
+        public AsyncApiUiOptions(string title, string version)
         {
-            
+            Title = title;
+            Version = version;
         }
 
         public void IncludeXmlComments(string filePath)

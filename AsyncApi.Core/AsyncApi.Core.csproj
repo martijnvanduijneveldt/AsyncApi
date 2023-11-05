@@ -9,6 +9,7 @@
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\AsyncApi.Models\AsyncApi.Models.csproj" />
+        <PackageReference Include="AsyncAPI.NET" />
+        <PackageReference Include="AsyncAPI.NET.Bindings" />
     </ItemGroup>
 </Project>

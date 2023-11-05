@@ -22,8 +22,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncApi.Core", "AsyncApi.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncApi.Core.Tests", "AsyncApi.Core.Tests\AsyncApi.Core.Tests.csproj", "{4CFA2F55-9743-4F33-9D15-BDAB9B2F0EBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncApi.Models", "AsyncApi.Models\AsyncApi.Models.csproj", "{74189F05-C3D4-418A-AD1C-3AB517B31A26}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,10 +52,6 @@ Global
 		{4CFA2F55-9743-4F33-9D15-BDAB9B2F0EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CFA2F55-9743-4F33-9D15-BDAB9B2F0EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CFA2F55-9743-4F33-9D15-BDAB9B2F0EBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74189F05-C3D4-418A-AD1C-3AB517B31A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74189F05-C3D4-418A-AD1C-3AB517B31A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74189F05-C3D4-418A-AD1C-3AB517B31A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74189F05-C3D4-418A-AD1C-3AB517B31A26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,7 +15,7 @@ namespace AsyncApi.UI
         public static IServiceCollection AddAsyncApiUi(this IServiceCollection serviceCollection, AsyncApiUiOptions options)
         {
             var builder = new AsyncApiBuilder(options.XmlNavigator);
-            
+            builder.AddInfo(options.Title, options.Version);
             serviceCollection.AddSingleton(builder);
             return serviceCollection;
         }
@@ -29,9 +29,7 @@ namespace AsyncApi.UI
             {
                 throw new NotSupportedException("Please call services.AddAsyncApiUi() on IServiceCollection");
             }
-            
-            
-            
+
             app.Map("/asyncapi",
                 subApp =>
                 {
@@ -44,8 +42,7 @@ namespace AsyncApi.UI
                     };
                     options.DefaultFileNames.Add("index.html");
                     subApp.UseDefaultFiles(options);
-                    
-                    
+
                     subApp.UseRouter(endpoints =>
                     {
                         endpoints.MapGet("/asyncapi.yml", async http =>

@@ -15,7 +15,7 @@ namespace WhiteApp
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            var options = new AsyncApiUiOptions();
+            var options = new AsyncApiUiOptions("My WhiteApp", "1.0.1");
             
             var filePath = Path.Combine(System.AppContext.BaseDirectory, "WhiteApp.xml");
             options.IncludeXmlComments(filePath);
